@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Reach for the News MVVMapp</string>
     <string name="search_news">Search News...</string>
     <string name="favourite_fab_button">favourite fab button</string>
 </resources>

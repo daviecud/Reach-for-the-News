@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/editSearchNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_news"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:flow_horizontalBias="0.5"
+        android:inputType="textCapSentences" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleVSearchNews"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="50dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@+id/editSearchNews"
+        app:layout_editor_absoluteX="0dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/paginationProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:progressBarStyle"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
