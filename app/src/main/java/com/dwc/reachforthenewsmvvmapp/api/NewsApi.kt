@@ -1,6 +1,6 @@
 package com.dwc.reachforthenewsmvvmapp.api
 
-import com.dwc.reachforthenewsmvvmapp.NewsResponse
+import com.dwc.reachforthenewsmvvmapp.models.NewsResponse
 import com.dwc.reachforthenewsmvvmapp.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

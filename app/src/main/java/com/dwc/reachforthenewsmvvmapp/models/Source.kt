@@ -1,4 +1,4 @@
-package com.dwc.reachforthenewsmvvmapp
+package com.dwc.reachforthenewsmvvmapp.models
 
 data class Source(
     val id: String,

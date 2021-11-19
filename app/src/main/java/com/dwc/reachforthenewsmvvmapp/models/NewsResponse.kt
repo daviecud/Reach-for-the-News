@@ -1,4 +1,6 @@
-package com.dwc.reachforthenewsmvvmapp
+package com.dwc.reachforthenewsmvvmapp.models
+
+import com.dwc.reachforthenewsmvvmapp.models.Article
 
 data class NewsResponse(
     val articles: List<Article>,
